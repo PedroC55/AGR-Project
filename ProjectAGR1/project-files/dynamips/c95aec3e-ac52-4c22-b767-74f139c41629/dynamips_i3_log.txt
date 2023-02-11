@@ -1,0 +1,64 @@
+Jan 04 09:04:59.209 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 04 09:04:59.210 HYPERVISOR: Started on IP = localhost, TCP port = 50824.
+Jan 04 09:04:59.704 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 09:04:59.704 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips 
+Jan 04 09:04:59.704 GENERAL: working_dir=C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips
+Jan 04 09:04:59.706 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips\d5989f09-7240-4e82-9045-eab5be393825 
+Jan 04 09:04:59.706 GENERAL: working_dir=C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips\d5989f09-7240-4e82-9045-eab5be393825
+Jan 04 09:04:59.706 HYPERVISOR: exec_cmd: vm create ESW1 6 c3725 
+Jan 04 09:04:59.707 VM: VM ESW1 created.
+Jan 04 09:04:59.708 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5005 
+Jan 04 09:04:59.709 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Jan 04 09:04:59.709 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jan 04 09:04:59.709 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Jan 04 09:04:59.710 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:04:59.710 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a1e0 
+Jan 04 09:04:59.713 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Utilizador/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 09:04:59.713 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c206.1614.0000 
+Jan 04 09:04:59.713 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jan 04 09:04:59.714 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:04:59.714 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Jan 04 09:05:05.038 HYPERVISOR: exec_cmd: nio create_udp udp-a6605a9a-9985-4520-a400-b801ba836bed 20010 127.0.0.1 20011 
+Jan 04 09:05:05.290 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 0 udp-a6605a9a-9985-4520-a400-b801ba836bed 
+Jan 04 09:05:05.291 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:05:05.864 HYPERVISOR: exec_cmd: nio create_udp udp-2cdd532d-daa6-40f5-b233-f99edd091e15 20026 127.0.0.1 20027 
+Jan 04 09:05:05.866 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 14 udp-2cdd532d-daa6-40f5-b233-f99edd091e15 
+Jan 04 09:05:05.866 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:05:06.069 HYPERVISOR: exec_cmd: nio create_udp udp-6e1e04bd-6d4e-4f6a-b768-3f69b5289253 20038 127.0.0.1 20039 
+Jan 04 09:05:06.071 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 7 udp-6e1e04bd-6d4e-4f6a-b768-3f69b5289253 
+Jan 04 09:05:06.071 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:05:06.311 HYPERVISOR: exec_cmd: nio create_udp udp-62c79999-8c7c-44c2-b8ec-7f1daf21b777 20048 127.0.0.1 20049 
+Jan 04 09:05:06.313 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-62c79999-8c7c-44c2-b8ec-7f1daf21b777 
+Jan 04 09:05:06.313 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:05:35.405 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 04 09:05:35.407 VM: VM Ghost created.
+Jan 04 09:05:35.407 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Utilizador/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 09:05:35.408 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 04 09:05:35.408 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 04 09:05:35.409 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 09:05:35.420 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 04 09:05:35.420 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 04 09:05:35.874 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 09:05:35.879 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 04 09:05:36.066 VM: VM Ghost shutdown.
+Jan 04 09:05:36.067 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 04 09:05:36.068 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 04 09:05:36.068 VM: VM Ghost destroyed.
+Jan 04 09:05:36.075 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jan 04 09:05:36.075 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\Utilizador\GNS3\projects\ProjectAGR1\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 04 09:05:36.076 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 09:05:36.076 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i6_startup-config.cfg 
+Jan 04 09:05:36.077 HYPERVISOR: exec_cmd: vm start ESW1 
+Jan 04 10:22:47.839 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 10:22:47.840 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jan 04 10:22:48.050 VM: VM ESW1 shutdown.
+Jan 04 10:22:48.051 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 04 10:23:13.847 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 10:23:13.849 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 04 10:23:14.409 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 04 10:23:14.410 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 04 10:23:14.412 HYPERVISOR: exec_cmd: vm delete ESW1 
+Jan 04 10:23:14.412 VM: VM ESW1 destroyed.
+Jan 04 10:23:14.416 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 04 10:23:14.722 HYPERVISOR: Stopped.
+Jan 04 10:23:14.723 GENERAL: reset done.
